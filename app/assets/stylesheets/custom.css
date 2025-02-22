@@ -1,0 +1,114 @@
+/* General body styling */
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Flash messages styling */
+.notice, .alert {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.notice {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+/* Login form container */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Login heading */
+.login-container h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+/* Login button */
+.btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Additional links */
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+    }
+}
