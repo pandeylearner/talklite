@@ -23,3 +23,12 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_22_101152) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 end
+
+ActiveRecord::Schema[8.0].define(version: 2025_02_22_095425) do
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+end
